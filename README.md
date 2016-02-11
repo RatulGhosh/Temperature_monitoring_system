@@ -1,1 +1,1 @@
-# Industrial Thermo-Surveillance and Interlocking over The Network                                  
+# IoT based Industrial Thermo-Surveillance and Interlocking                                
