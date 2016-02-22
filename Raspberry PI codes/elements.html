@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My title</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style type="text/css">
+    .green {
+      color: #449d44;
+    }
+    .red 
+    {
+      color: #d9534f;
+    }
+    .blue {
+      color: #5bc0de;
+    }
+
+    </style>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+        <h3 class="green">
+          Common elements and snippets
+        </h3>
+        <hr>
+        </div>
+        </div>
+        
+        <!-- Buttons -->
+        <div class="row">
+        <div class="col-lg-6">
+        Buttons
+         <br>
+        <button class="btn btn-success">Affirmative</button>
+        <button class="btn btn-danger">Deny</button>
+        <br><br>
+        <!-- Alerts -->
+        Alerts
+        <br>
+        <div class="alert alert-success">Success!</div> 
+        <div class="alert alert-info">Something wrong!</div> 
+
+        
+        </div>
+        <div class="col-lg-6">
+          <div class="panel panel-default">
+            <div class="panel-heading" id="myRoom">
+              My Sensors
+            </div>
+            <div class="panel-body">
+            LDR Level : <strong class="green">HIGH</strong><br>
+            Proximity Sensor: <strong class="red">LOW</strong>
+            <br>
+            <br>
+            <div id="buttons">
+             <strong>Light:</strong>
+             <button class="btn btn-success" value="lon">ON</button>
+             <button class="btn btn-danger" value="loff">OFF</button> 
+             <br> <br>
+             <strong>Fan:</strong>
+             <button class="btn btn-success" value="fon">ON</button>
+             <button class="btn btn-danger" value="foff">OFF</button> 
+             <br><br><br>
+             <div id="command-output"></div> 
+            </div>
+            </div>
+          </div>
+
+        </div>
+
+        </div>
+        <br>
+               
+      </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('div #myRoom button').click(function () {
+            var buttonValue = $(this).attr('value');
+            $.ajax({
+                type: "POST",
+                url: "command.php",
+                data: "name=" + buttonValue
+            }).done(function (data) {
+                $('#command-output').html(data);
+            });
+        });
+    });
+</script>
+  </body>
+</html>
