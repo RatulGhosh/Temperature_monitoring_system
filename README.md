@@ -24,3 +24,7 @@ There are two nodes and each node is connected to a temperature sensor. Each nod
 
 
 
+
+### License
+
+Note that Temperature_monitoring_system is distributed under the [MIT License](http://opensource.org/licenses/MIT).
