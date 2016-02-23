@@ -20,7 +20,7 @@ The ULN2803APG / AFWG Series are high−voltage, high−current darlington drive
 ( Note : This is not compulsory to use fan driver.In this project I have used a  CPU fan as the control mechanism.)
 
 ## Working : 
-There are two nodes and each node is connected to a temperature sensor. Each node has an Node MCU. The sensors are  placed in different rooms which continuously sends the temperature values to the raspberry pi acting as the server. The temperature readings will be displayed on the web page as well as on the android app , also each temperature sensors can be operated i.e switched on and  off from the website and the app. Also there is an extended option in the android app to set a threshold value of the temperature.
+There are two nodes and each node is connected to a temperature sensor. Each node has an Node MCU. The sensors are  placed in different rooms which continuously sends the temperature values to the raspberry pi acting as the server.The temperature is continuously checked with the threshold temperature and if it crosses that temperature a warning message is sent to the website ans the android app,also the control mechanism (a CPU fan in this case) is switched on.  The temperature readings will be displayed on the web page as well as on the android app , also each temperature sensors can be operated i.e switched on and  off from the website and the app. Also there is an extended option in the android app to set a threshold value of the temperature.
 
 
 
