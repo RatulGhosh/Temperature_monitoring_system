@@ -6,3 +6,6 @@ Temperature is a common variable in many systems and processes. In most industri
 # <img src="https://raw.githubusercontent.com/RatulGhosh/Temperature_monitoring_system/master/c1s.jpg_450x300.jpg" />
 * [NodeMCU : ](https://github.com/nodemcu/nodemcu-firmware)
 An open-source firmware and development kit that helps you to prototype your IOT product easily.The Development Kit based on ESP8266, integates GPIO, PWM, IIC, 1-Wire and ADC all in one board. Power your developement in the fastest way combinating with NodeMCU Firmware.
+# <img src="https://github.com/RatulGhosh/Temperature_monitoring_system/blob/master/images/1914-01.jpg"/>
+* [Raspberry Pi : ](https://www.raspberrypi.org/)
+The Raspberry Pi is a low cost, credit-card sized computer that plugs into a computer monitor or TV, and uses a standard keyboard and mouse. It is a capable little device that enables people of all ages to explore computing, and to learn how to program in languages like Scratch and Python. It’s capable of doing everything you’d expect a desktop computer to do, from browsing the internet and playing high-definition video, to making spreadsheets, word-processing, and playing games.
