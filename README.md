@@ -2,6 +2,8 @@
 
 Temperature is a common variable in many systems and processes. In most industries there are several equipments to sense the temperature, but it is preferable to automate the measurement process. This temperature sensing module can be used as an early detector of fire in industries and also as a sensor kit in warehouses, hospitals, etc. In this project, different nodes which is used for autonomous temperature measurement. It is implemented using thermistors for measurement of temperature, a controller which simultaneously compares the measured values with the set permissible levels and if the temperature exceeds the set limit, an alert is sent to the designed android app and a control mechanism is switched on(here I have used a single CPU fan as the control mechanism). There is an extended option in the android app to set a threshold value of the temperature.
 
+
+
 ## Hardware used : 
 
 * [NodeMCU : ](https://github.com/nodemcu/nodemcu-firmware)
@@ -26,5 +28,6 @@ There are two nodes and each node is connected to a temperature sensor. Each nod
 
 
 ### License
+# <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat" width="80" />
 
 Note that Temperature_monitoring_system is distributed under the [MIT License](http://opensource.org/licenses/MIT).
