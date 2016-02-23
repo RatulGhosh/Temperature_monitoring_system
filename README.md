@@ -17,4 +17,10 @@ A thermistor is a type of resistor whose resistance varies significantly with te
 
 * [ULN2803APG(Fan driver) : ](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=8&cad=rja&uact=8&ved=0ahUKEwjbh_aK4o7LAhWMxI4KHRg6ChEQFggzMAc&url=http%3A%2F%2Fwww.alldatasheet.com%2Fdatasheet-pdf%2Fpdf%2F182611%2FTOSHIBA%2FULN2803APG.html&usg=AFQjCNH1hWE5d0SANT8S13imTxuNvrz5yg&sig2=0nn3ISoibDpWDAzpR7Xw4A)
 The ULN2803APG / AFWG Series are high−voltage, high−current darlington drivers comprised of eight NPN darlington pairs. All units feature integral clamp diodes for switching inductive loads. Applications include relay, hammer, lamp and display (LED) drivers.
-# Note : This is not compulsory to use fan driver.In this project I have used a  CPU fan as the control mechanism.
+( Note : This is not compulsory to use fan driver.In this project I have used a  CPU fan as the control mechanism.)
+
+## Working : 
+There are two nodes and each node is connected to a temperature sensor. Each node has an Node MCU. The sensors are  placed in different rooms which continuously sends the temperature values to the raspberry pi acting as the server. The temperature readings will be displayed on the web page as well as on the android app , also each temperature sensors can be operated i.e switched on and  off from the website and the app. Also there is an extended option in the android app to set a threshold value of the temperature.
+
+
+
