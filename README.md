@@ -22,12 +22,19 @@ The ULN2803APG / AFWG Series are high−voltage, high−current darlington drive
 ( Note : This is not compulsory to use fan driver.In this project I have used a  CPU fan as the control mechanism.)
 
 ## Working : 
-There are two nodes and each node is connected to a temperature sensor. Each node has an Node MCU. The sensors are  placed in different rooms which continuously sends the temperature values to the raspberry pi acting as the server.The temperature is continuously checked with the threshold temperature and if it crosses that temperature a warning message is sent to the website and the android app,also the control mechanism (a CPU fan in this case) is switched on.  The temperature readings will be displayed on the web page as well as on the android app , also the control mechanism can be operated i.e switched on and  off from the website and the app. Also there is an extended option in the android app to change the threshold temperature.
+There are two nodes and each node is connected to a temperature sensor. Each node has an Node MCU. The sensors are  placed in different rooms which continuously sends the temperature values to the raspberry pi acting as the server (In order to save space I am storing the temperature after every 2 minutes).The temperature is continuously checked with the threshold temperature and if it crosses that temperature a warning message is sent to the website and the android app,also the control mechanism (a CPU fan in this case) is switched on.  The temperature readings will be displayed on the web page as well as on the android app , also the control mechanism can be operated i.e switched on and  off from the website and the app. Also there is an extended option in the android app to change the threshold temperature.
 
 
 
 
 ### License
 # <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat" width="80" />
-
 Note that Temperature_monitoring_system is distributed under the [MIT License](http://opensource.org/licenses/MIT).
+
+### TODO
+* Improve the UI
+* Cloud platform can be used to handle size issues
+* More accurate sensors can be used
+* The functionality of the app can be further enhanced by including more useful features.
+
+Your feedback, ideas, suggestions are most welcome!
